@@ -1,0 +1,18 @@
+services:
+  app:
+    image: 'docker-spring-boot-mysql:latest'
+    build:
+      context: .
+    container_name: customer-management-api
+    depends_on:
+      - mysql
+    ports:
+      - "8080:8080"
+
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=default_db'
+      - 'MYSQL_ROOT_PASSWORD=test123'
+    ports:
+      - '3306:3306'

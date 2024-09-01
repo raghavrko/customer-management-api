@@ -1,4 +1,4 @@
-package com.customer_management_api;
+package com.customerManagementApi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
