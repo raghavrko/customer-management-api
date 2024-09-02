@@ -1,5 +1,5 @@
-FROM amazoncorretto:17
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} application.jar
-CMD apt-get update -y
-ENTRYPOINT ["java","-Xmx2048M","-jar","/application.jar"]
+#FROM maven:3.8.5-openjdk-17
+#WORKDIR /customer-management-api
+#COPY . .
+#RUN mvn clean install -DskipTests
+#CMD mvn spring-boot:run
